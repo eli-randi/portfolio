@@ -1,0 +1,159 @@
+.Hello-Page {
+    height: 90vh;
+    display: flex;
+    flex-direction: row;
+    padding-top: 100px;
+    background-image: url('./Hello-background.png');
+    background-repeat: no-repeat;
+    background-position: left;
+    background-position-y: 65%;
+    background-size: 52%;
+}
+
+.Content {
+    display: grid;
+    grid-template: 'a a b' 60%
+                    'c c c' auto;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 5% 15% 0 15%;
+    max-width: 100%;
+}
+
+.Introduction {
+    display: flex;
+    grid-area: 'a a';
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: justify;
+    min-width: 300px
+}
+
+h1 {
+    font-family: 'Lily Script One', 'cursive';
+    font-size: 100px;
+    color: #FFAE64;
+    text-shadow: #583610 2px 2px 1px;
+    margin: 0%;
+}
+
+p {
+    margin: 0%;
+}
+
+.Profile-Pic {
+    max-width: 80%;
+    justify-self: flex-end;
+    grid-area: b;
+    min-width: 200px;
+    position: relative;
+}
+
+
+.Profile-Pic img {
+    width: 100%;
+    border-radius: 20px;
+    height: auto;
+}
+
+/* .Profile-Pic::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+} */
+
+.Profile-Pic::after {
+    border-radius: 20px;
+    content: '';
+    border: 2px solid #FFAE64;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 20px;
+    left: 20px;
+    z-index: -1;
+}
+
+.Profile-Pic:hover::after{
+    animation: ProfilePicBackground 1s forwards ease-in;
+    -webkit-animation: ProfilePicBackground 1s forwards ease-in;
+
+}
+
+@-webkit-keyframes ProfilePicBackground {
+    100% {
+        background-color: rgb(255, 162, 77, 0.4);
+    }
+}
+
+@keyframes ProfilePicBackground {
+    100% {
+        background-color: rgb(255, 162, 77, 0.4);
+    }
+}
+
+.Technologies {
+    grid-area: c;
+    text-align: center;    
+}
+
+.Technologies h2 {
+    font-family: 'DM Mono', normal;
+    font-weight: 500;
+    font-size: 1em;
+}
+
+.TechnologiesBox {
+    display: flex;
+    margin: auto;
+    width: 90%;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 10px;
+    border: 2px solid #B6C3FD;
+    padding: 15px 0px;
+}
+
+.Technology {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px
+}
+
+@media (max-width: 1000px) {
+    .Hello-Page {
+        height: 100vh;
+        background-size: 90%;
+        background-position-y: 30% ;
+    }
+
+    .Content {
+        gap: 20px;
+        grid-template: 'a'
+                        'b'
+                        'c'
+    }
+
+    .Introduction {
+        max-width: 90%;
+    }
+
+    .Profile-Pic {
+        max-width: 50%;
+        margin: auto;
+    }
+}
+
+@media (max-width: 600px) {
+    .Content {
+        margin: 5%;
+    }
+}

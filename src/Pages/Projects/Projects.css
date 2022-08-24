@@ -1,0 +1,134 @@
+.Projects-Page {
+    margin-top: 100px;
+    padding-top: 100px;
+    margin: 0% 15%;
+    font-family: 'DM Sans', normal;
+}
+
+.ProjectContent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 5%;
+    width: 100%;
+    gap: 5%;
+}
+
+.ProjectBox {
+    display: grid;
+    height: 700px;
+    grid-template: 'a' 25%
+        'b' 45%
+        'c' 10%
+}
+
+.ProjectImage {
+    position: relative;
+    grid-area: a;
+    margin: auto;
+    height: 100%;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 1s;
+}
+
+.ProjectImage:hover > .ProjectLogo {
+    transition: 1s;
+    opacity: 0;
+    background-color: rgba(47, 34, 225, 0.7);;
+}
+
+.ProjectImage:hover {
+    transform: scale(1.05);
+    transition: 1s;
+}
+
+.ProjectImage img {
+    position: relative;
+    width: 90%;
+    height: calc(100% - 6px);
+    border-radius: 5px;
+    border: 3px solid;
+}
+
+
+.ProjectLogo {
+    position:absolute;
+    opacity: 1;
+    top: 3px;
+    left: 5%;
+    z-index: 10;
+    grid-area: a;
+    margin: auto;
+    width: 90%;
+    height: calc(100% - 6px);
+    background-color: rgba(0, 0, 0, 0.7);
+    overflow: hidden;
+    transition: all 1.5s;
+}
+
+
+
+.ProjectLogo img {
+    width: 50px;
+    height: auto;
+    border: none;
+    margin-top: 20%
+}
+
+.ProjectDescription {
+    grid-area: b;
+    background-color: #30375A;
+    margin-top: -5%;
+    padding: 10% 5%;
+
+}
+
+.ProjectLinks {
+    grid-area: c;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 10%;
+    align-items: center;
+}
+
+.ProjectLinks h3 {
+    grid-area: c;
+    margin: 0;
+    font-size: 80%;
+    font-weight: 300;
+    text-align: right;
+}
+
+.ProjectLinks img {
+    height: 20px;
+    margin-right: 20px;
+}
+
+.ProjectLinksImg img:hover {
+    cursor: pointer;
+    transition: 0.2s;
+    filter: invert(0.4) sepia(1) saturate(1) hue-rotate(122.4deg) brightness(1.2);
+}
+
+
+@media (max-width: 1000px) {
+    .ProjectContent {
+        flex-direction: column;
+    }
+
+    .ProjectBox {
+        grid-template: 'a' 35%
+            'b' 35%
+            'c' 10%
+    }
+}
+
+@media (max-width: 600px) {
+    .ProjectBox {
+        grid-template: 'a' 25%
+            'b' 45%
+            'c' 10%
+    }
+}

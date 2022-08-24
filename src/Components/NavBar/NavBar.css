@@ -1,0 +1,111 @@
+.NavBar {
+    position: fixed;
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 96%;
+    height: 8%;
+    margin: 1% 2%;
+}
+
+.NavLinks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    width: 60%;
+    height: 100%;
+}
+
+.NavLinks h6 {
+    font-family: 'DM Mono', normal;
+    font-size: 60%;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+
+.Logo {
+    height: 100%;
+}
+
+.NavLink {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+}
+
+.NavLink img {
+    margin-right: 5px;
+}
+
+.ActiveButton {
+    grid-area: box;
+    z-index: 2;
+    -webkit-animation: moveButton 0.5s forwards  normal ease-out;
+    animation: moveButton 0.5s forwards normal ease-out;
+}
+
+.InactiveButton {
+    grid-area: box;
+}
+
+.NavLinkButtonBox {
+    position: relative;
+    display: grid;
+    grid-template: "box" 50px;
+    align-items: center;
+}
+
+ 
+@-webkit-keyframes moveButton {
+
+    100% {
+        transform: translate(-10px);
+    }
+}
+@keyframes moveButton {
+    100% {
+        transform: translate(-10px);
+    }
+}
+
+@media (max-width: 600px) {
+    .NavLinkButtonBox {
+        display: none;
+    }
+    .NavLinks {
+        width: 80%;
+    }
+    .NavLink {
+        width: fit-content;
+    }
+    .NavLink h6 {
+      font-size: 0.8rem;
+    }
+    .Logo {
+        width: 10%;
+    }
+    .Logo img {
+        width: 100%;
+        height: auto;
+    }
+    .NavBar {
+      height: 40px;
+    }
+    .ActiveTextLink {
+      text-decoration: underline;
+      text-decoration-color: #EDE9E9;
+      text-decoration-thickness: 20%;
+    }
+    .InactiveTextLink {
+      text-decoration: underline;
+      text-decoration-color: #FFA24D;
+      text-decoration-thickness: 20%;
+    }
+}
+  
