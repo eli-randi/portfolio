@@ -1,24 +1,19 @@
-import './App.css';
-import { Loader } from './Pages/Loading/Loader';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import { Main } from './Components/Structure/Main';
+
+import { Loader } from './Pages/Loading/Loader';
+import { Main } from './Components/Structure/Main.tsx';
+
+import './App.css';
 
 function App() {
   return (
     <BrowserRouter>
-
       <Routes>
-        <Route path='/' element={
-          <Loader />
-      } />
-        <Route path='/homepage' element={
-        <Main />
-        } />
+        <Route path='/' element={<Loader />} />
+        <Route path='/homepage' element={<Main />} />
       </Routes>
     </BrowserRouter>
   );
 }
-
-
 
 export default App;

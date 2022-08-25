@@ -1,0 +1,106 @@
+.Form-Page {
+  display: grid;
+  grid-template: 'questions' 75%
+    'submit' 25%;
+  text-align: left;
+  font-family: 'DM Sans', normal;
+  font-size: 60%;
+  width: 80%;
+  margin: auto;
+}
+
+.Form-Page input {
+  background-color: transparent;
+  border: white 1px solid;
+  border-radius: 5px;
+  padding: 3% 3%;
+  font-size: 110%;
+  color: white;
+  font-family: 'DM Sans', normal;
+}
+
+.FormQuestions {
+  opacity: 0;
+  transform: scale(0.1);
+  transition: opacity 1s ease, transform 1s ease;
+  grid-area: questions;
+  display: grid;
+  grid-template: 'name email' 40%
+    'message message' 60%;
+  gap: 5%;
+}
+
+.FormQuestions.in.visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.Succeeded {
+  opacity: 0;
+  transform: scale(0.1);
+  transition: opacity 1s ease, transform 1s ease;
+  grid-area: questions;
+  text-align: center;
+  margin: auto;
+  align-items: center;
+}
+
+.Succeeded.in.visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.Form-Page textarea {
+  background-color: transparent;
+  border: white 1px solid;
+  border-radius: 5px;
+  padding: 2% 2%;
+  font-size: 110%;
+  color: white;
+  font-family: 'DM Sans', normal;
+  resize: none;
+}
+
+input:focus {
+  outline: none;
+}
+
+textarea:focus {
+  outline: none;
+}
+
+.FormInput {
+  display: flex;
+  flex-direction: column;
+}
+
+.Name {
+  grid-area: name;
+}
+
+.Email {
+  grid-area: email;
+}
+
+.Message {
+  grid-area: message;
+}
+
+.FormSubmit {
+  grid-area: submit;
+  margin: auto;
+}
+
+button {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+}
+
+@media (max-width: 600px) {
+  .FormQuestions {
+    grid-template: 'name' 20%
+      'email' 20%
+      'message' 40%
+  }
+}
