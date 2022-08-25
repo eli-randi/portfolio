@@ -87,7 +87,7 @@ export const Projects = () => {
                 </div>
               </div>
               <div className='ProjectDescription'>
-                <div>
+                <div className='DescriptionParagraph'>
                   {project.description.map((descriptionText) => <p key={descriptionText}>{descriptionText}</p>)}
                 </div>
                 <h4>{project.tech.map((tech) => <li key={tech}>{tech}</li>)}</h4>

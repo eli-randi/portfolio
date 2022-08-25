@@ -33,7 +33,7 @@
 .ProjectBox {
   flex: 1;
   display: grid;
-  height: 700px;
+  min-height: 700px;
   grid-template: 'a' 25%
     'b' 55%
     'c' 10%
@@ -109,6 +109,12 @@
   margin: 1% 2%;
 }
 
+.DescriptionParagraph {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
 .ProjectLinks {
   grid-area: c;
   display: flex;
@@ -166,16 +172,25 @@
   }
 
   .ProjectBox {
+    padding-top: 10%;
     grid-template: 'a' 35%
-      'b' 45%
+      'b' auto
       'c' 10%
+  }
+
+  .PortfolioBox {
+    margin-top: 10%;
   }
 }
 
 @media (max-width: 600px) {
   .ProjectBox {
+    padding-top: 10%;
     grid-template: 'a' 25%
-      'b' 55%
+      'b' auto
       'c' 10%
+  }
+  .PortfolioBox {
+    margin-top: 10%;
   }
 }

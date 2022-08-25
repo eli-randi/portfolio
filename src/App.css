@@ -44,6 +44,7 @@ h4 {
 h5 {
   font-family: 'DM Sans', normal;
   font-size: 60%;
+  text-align: right;
 }
 
 h6 {
@@ -55,7 +56,7 @@ h6 {
 p {
   font-family: 'DM Sans', normal;
   margin: 0%;
-  font-size: 70%;
+  font-size: 1.1rem;
   text-align: justify;
 }
 

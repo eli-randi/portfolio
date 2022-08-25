@@ -1,5 +1,5 @@
 .Experience-Page {
-  padding-top: 10%;
+  padding-top: 100px;
   height: 80vh;
   margin: 0% 15%;
   font-family: 'DM Sans', normal;
@@ -158,10 +158,14 @@
 
   .ExpDetails {
     width: 90%;
-    /* padding-bottom: 10%; */
+    padding: 10%;
   }
 
   .ExpList {
     flex-direction: row;
+  }
+
+  .ExpList p {
+    font-size: 0.9rem;
   }
 }
