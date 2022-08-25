@@ -88,9 +88,9 @@ export const Projects = () => {
               </div>
               <div className='ProjectDescription'>
                 <div>
-                  {project.description.map((descriptionText) => <p>{descriptionText}</p>)}
+                  {project.description.map((descriptionText) => <p key={descriptionText}>{descriptionText}</p>)}
                 </div>
-                <h4>{project.tech.map((tech) => <li>{tech}</li>)}</h4>
+                <h4>{project.tech.map((tech) => <li key={tech}>{tech}</li>)}</h4>
               </div>
               <div className='ProjectLinks' style={{ backgroundColor: project.footerColour }}>
                 <div className='ProjectLinksImg'>
