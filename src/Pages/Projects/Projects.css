@@ -9,7 +9,6 @@
   margin: 0;
   font-size: 80%;
   font-weight: 300;
-  text-align: right;
 }
 
 .Projects-Page h4 {
@@ -124,6 +123,10 @@
   align-items: center;
 }
 
+.ProjectLinks h3 {
+  text-align: right;
+}
+
 .ProjectLinks img {
   height: 20px;
   margin-right: 20px;
@@ -141,6 +144,7 @@
   align-items: center;
   background-color: #30375A;
   height: fit-content;
+  
 }
 
 .PortfolioLinks {
@@ -150,6 +154,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 2% 3%;
+  text-align: left;
 }
 
 .PortfolioLinks img {

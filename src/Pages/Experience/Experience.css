@@ -1,6 +1,6 @@
 .Experience-Page {
   padding-top: 100px;
-  height: 80vh;
+  min-height: 80vh;
   margin: 0% 15%;
   font-family: 'DM Sans', normal;
 }

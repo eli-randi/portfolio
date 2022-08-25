@@ -59,6 +59,7 @@
   color: white;
   font-family: 'DM Sans', normal;
   resize: none;
+  height: -webkit-fill-available;
 }
 
 input:focus {
