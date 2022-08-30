@@ -4,10 +4,11 @@ import GitHubIcon from '../../Assets/GitHubIconBlue.svg'
 import LinkedInIcon from '../../Assets/LinkedInIcon.svg'
 import CVIcon from '../../Assets/CVIcon.svg'
 import EmailIcon from '../../Assets/EmailIcon.svg'
+import CV from '../../Assets/Elisa_Randisi_CV_Tech.pdf'
 
 import './Contact.css'
 
-const contactLinks = [
+const contactLinks : ContactType[] = [
   {
     label: 'GitHub',
     icon: GitHubIcon,
@@ -21,7 +22,7 @@ const contactLinks = [
   {
     label: 'CV',
     icon: CVIcon,
-    url: ''
+    url: CV
   },
   {
     label: 'Email',
@@ -40,6 +41,7 @@ export const Contact = () => {
         </h2>
         <div className='ContactLinks'>
           {contactLinks.map((contact) => {
+            console.log(contact.url)
             return (
               <div 
                 key={contact.label}
@@ -62,4 +64,11 @@ export const Contact = () => {
       </div>
     </div>
   )
+}
+
+
+type ContactType = {
+  label: string,
+  icon: any,
+  url: any
 }

@@ -18,23 +18,23 @@ export const Experience: () => JSX.Element = () => {
     {
       name: 'Squeeze',
       date: '2022 - Present',
-      role: 'Front-end Developer Contractor | Data Analytics Start-up',
-      description: 'Worked for a marketing analytics start-up as main front-end developer on a project-base. Designed and built the internal and customer facing platform management portal and new customer flow to create a brand-centered UX. Focused on basing their future code base on React, ReactQuery, TypeScript, and used libraries such as MUI for certain functionalities.',
+      role: 'Frontend Developer | Data Analytics Start-up',
+      description: 'I\'ve been working with the guys at Squeeze (a marketing analytics start-up) as the sole frontend developer for the past few months. I work with them to design and build the customer portal, allowing them to manage their Squeeze account, as well as a new customer flow to allow the business to acquire new clients organically. I implemented this using React/React Query/TypeScript, working closely with the guys to understand their ideas and turn them into solutions.',
       specialClass: 'Squeeze'
-    },
-    {
-      name: 'OneHealth Communications',
-      date: '2021 - 2022',
-      role: 'Account and Social Media Executive | Marketing Agency',
-      description: 'Responsible for the management and delivery of concurrent projects across over 15 client accounts by translating briefs into actions across different internal teams and monitoring and reporting on their performance. Developed in my role by taking over the management of social media advertisement for clients. Responsible for expanding and improving on their strategies by implementing a new reporting platform (Squeeze actually!) in our client deliverables. ',
-      specialClass: 'OHC'
     },
     {
       name: 'Studying',
       date: '2021 - 2022',
-      role: 'Front-end Career Path | CodeCademy',
-      description: 'My interest and passion for website development pushed me to make a career change. Started by studying the CodeCademy Front-end course part-time whilst working and then made a bet on myself and focused my attention full-time to engineering as I started working on my projects.',
+      role: 'Frontend Career Path | CodeCademy',
+      description: 'Web Development had previously piqued my interest, but this course helped me to make a career change. I started by studying the CodeCademy Frontend course part-time (alongside my full-time job!) and eventually decided to bite the bullet, focusing my attention full-time on building my career as a frontend developer. The course covered a lot, all the way from the basics of HTML, through to building/testing React applications.',
       specialClass: 'Studying'
+    },
+    {
+      name: 'OneHealth',
+      date: '2021 - 2022',
+      role: 'Account and Social Media Executive | Marketing Agency',
+      description: 'I spent my time in this role responsible for around 15 client accounts. I worked closely with our tech and sales team to make sure everything ran smoothly, while maintaining good relationships with my clients and updating them on the progress of their projects. Thanks to my knowledge in digital marketing, I also took over the company\'s social media campaigns for our clients and introduced a new reporting tool to improve our efficiency.',
+      specialClass: 'OHC'
     }
   ]
 
@@ -64,10 +64,10 @@ export const Experience: () => JSX.Element = () => {
         <div className='ExpList'>
           {ExperienceList.map((exp) => {
             return (
-              <div 
-              key={exp.name}
-              className={'ExpListItem ' + specialClassName} 
-              onClick={() => handleChooseExp(exp)}
+              <div
+                key={exp.name}
+                className={'ExpListItem ' + specialClassName}
+                onClick={() => handleChooseExp(exp)}
               >
                 <p>{exp.name}</p>
               </div>

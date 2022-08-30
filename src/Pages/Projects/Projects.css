@@ -13,6 +13,8 @@
 
 .Projects-Page h4 {
   text-decoration: underline;
+  font-weight: bold;
+  font-size: 0.65em;
 }
 
 .ProjectsNote {

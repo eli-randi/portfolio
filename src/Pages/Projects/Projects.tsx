@@ -26,9 +26,11 @@ type ProjectType = {
 const projects: ProjectType[] = [
   {
     name: 'Squeeze',
-    description: ['As a very back-end heavy start-up, my projects in Squeeze were aimed at having a very generalised front-end, so that the back-end could grow and develop without having to make any heavy changes in the front-end.',
-      'Both the management portal and the new customer flow I have created helped the team save time and the sanity of dan.'],
-    tech: ['React', 'ReactQuery', 'TypeScript', 'JavaScript', 'Git'],
+    description: ['I worked with Squeeze to create their customer portal and new customer flow.',
+      'As a backend heavy company, my projects are built to have a generic frontend, which renders according to responses by the backend.',
+      'The apps have been built with React and I later implemented React Query and TypeScript to build a stronger frontend for future developers to manage.'
+    ],
+    tech: ['React', 'React Query', 'TypeScript'],
     logo: SqueezeLogo,
     image: SqueezeSS,
     gitHubUrl: 'https://github.com/eli-randi/squeeze-portal',
@@ -39,10 +41,9 @@ const projects: ProjectType[] = [
   {
     name: 'Randdit',
     description: ['Reddit + Randisi = Randdit! Created using the Reddit API and OAuth2.',
-      'This mobile-friendly app renders the subreddits and posts you would see on your own personal Reddit account.',
-      'Randdit uses Redux to store your posts and has an infinite scroll functionality embedded in as well.',
-      'Login to see how it works! '],
-    tech: ['React', 'Redux', 'JavaScript', 'Git', 'CSS'],
+      'This mobile-friendly app renders the subreddits and posts you would see on your own personal Reddit account, and you can also follow/unfollow pages and vote on posts.',
+      'Randdit is built using React and Redux, and also has an infinite scroll functionality that updates the store.'],
+    tech: ['React', 'Redux', 'JavaScript', 'CSS'],
     logo: RandditLogo,
     image: RandditSS,
     gitHubUrl: 'https://github.com/eli-randi/randdit',
@@ -54,8 +55,8 @@ const projects: ProjectType[] = [
     name: 'Zoopisa',
     description: ['As you can see, I love morphing website names into my own. Zoopisa is my version of Zoopla (+ Elisa).',
       'I used the Zoopla and GoogleMaps APIs to create an interactive map and house list where you can search a house on sale and see it on the map.',
-      'If I have reached my monthly API requests to Zoopla, try searching for a house in Westbury :)'],
-    tech: ['React', 'GoogleMaps SDK', 'JavaScript', 'Git', 'CSS'],
+      'Clicking on the houses will also open a modal where more details and similar houses will be displayed.'],
+    tech: ['React', 'Git', 'JavaScript', 'CSS'],
     logo: ZoopisaLogo,
     image: ZoopisaSS,
     gitHubUrl: 'https://github.com/eli-randi/zoopisa',
@@ -109,8 +110,7 @@ export const Projects = () => {
           <img src={GitHubLogo} onClick={() => window.open('https://github.com/eli-randi/portfolio')} alt='GitHub Logo' />
         </div>
         <div className='PortfolioDescription'>
-          <p>To build this portfolio I have experimented with some fun packages and animations, including AOS, SVG and Lottie animations, a FormSpree email form, and some good old fashioned CSS.</p>
-          <p>For this project I used React, TypeScript and a lot of CSS</p>
+          <p>I built my portfolio in React, but I also experimented with some fun packages and animations, including AOS/SVG/Lottie animations, FormSpree, and some good old fashioned CSS.</p>
         </div>
       </div>
     </div>

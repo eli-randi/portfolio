@@ -47,8 +47,8 @@ export const Hello = () => {
       <div className='Content'>
         <div className="Introduction">
           <h1>Hello,</h1>
-          <p>I'm <span>Elisa Randisi</span> and I'm a front-end developer based in the UK.
-            I'm passionate about creating digital products that are both technically and visually great.
+          <p>I'm <span>Elisa Randisi</span> and I'm a frontend developer based in the UK.
+            I'm passionate about creating digital products that are both technically and visually great. 
             In my free time you can find me rewatching old shows I've already seen (currently Seinfeld) and escaping the British weather!
           </p>
         </div>
@@ -77,7 +77,6 @@ export const Hello = () => {
           </div>
         </div>
       </div>
-
     </div>
   )
 }
