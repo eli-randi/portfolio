@@ -33,7 +33,7 @@ const projects: ProjectType[] = [
     tech: ['React', 'React Query', 'TypeScript'],
     logo: SqueezeLogo,
     image: SqueezeSS,
-    gitHubUrl: 'https://github.com/eli-randi/squeeze-portal',
+    gitHubUrl: 'https://github.com/eli-randi/squeeze-public',
     url: 'https://portal2.thisissqueeze.com/home',
     borderColour: '#FDCA19',
     footerColour: '#CC7A00'
